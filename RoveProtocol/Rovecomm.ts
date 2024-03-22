@@ -20,7 +20,7 @@ export let SystemPackets: any = {}
 export let NetworkDevices: any = {}
 let ethernetUDPPort = 11000
 let ethernetTCPPort = 12000
-const dirname = path.dirname(process.env.ROVECOMM);
+const dirname = path.dirname(process.env.ROVECOMM ? process.env.ROVECOMM : "NOTFOUND");
 const filepath = path.join(dirname, './manifest/manifest.json')
 console.log(filepath)
 
