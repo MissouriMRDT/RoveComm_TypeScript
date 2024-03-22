@@ -10,7 +10,8 @@ export let dataSizes: any = [];
 export let DataTypes: any = {};
 const headerLength = 6;
 
-const filepath = path.join(__dirname, '../assets/manifest/manifest.json');
+const dirname = path.dirname(process.env.ROVECOMM);
+const filepath = path.join(dirname, "./manifest/manifest.json");
 export const VersionNumber = 3;
 
 if (fs.existsSync(filepath)) {

@@ -20,7 +20,8 @@ export let SystemPackets: any = {}
 export let NetworkDevices: any = {}
 let ethernetUDPPort = 11000
 let ethernetTCPPort = 12000
-const filepath = path.join(__dirname, '../assets/manifest/manifest.json')
+const dirname = path.dirname(process.env.ROVECOMM);
+const filepath = path.join(dirname, './manifest/manifest.json')
 console.log(filepath)
 
 if (fs.existsSync(filepath)) {

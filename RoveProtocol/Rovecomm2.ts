@@ -8,7 +8,8 @@ import { parse } from './Rovecomm';
 
 export let dataSizes: any = [];
 export let DataTypes: any = {};
-const filepath = path.join(__dirname, '../assets/manifest/manifest.json');
+const dirname = path.dirname(process.env.ROVECOMM);
+const filepath = path.join(dirname, "./manifest/manifest.json");
 export const VersionNumber = 2;
 const headerLength = 5;
 
